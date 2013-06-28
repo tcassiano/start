@@ -1,3 +1,16 @@
 = KickoffRails
 
-This project rocks and uses MIT-LICENSE.
+KickoffRails is a collection of Rails generators for faster project setup.
+
+== Setup
+
+Add the gem to your Gemfile.
+
+  gem "kickoff_rails", group: :development
+
+Then you can run any of the included generators.
+
+  rails g unicorn
+
+== Included Generators
+* unicorn: generates config files for unicorn setup based on https://devcenter.heroku.com/articles/rails-unicorn

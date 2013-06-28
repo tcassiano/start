@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Julio Protzek", "Renato Carvalho"]
   s.email       = ["julio@startae.com.br", "renato@startae.com.br"]
   s.homepage    = "http://github.com/startae/kickoff_rails"
-  s.summary     = "Rails Generators"
-  s.description = "KickoffRails makes a new project setup faster with feature generators."
+  s.summary     = "Collection of Rails generators"
+  s.description = "KickoffRails is a collection of Rails generators for faster project setup."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
