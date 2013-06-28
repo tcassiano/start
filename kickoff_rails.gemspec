@@ -13,6 +13,8 @@ Gem::Specification.new do |s|
   s.summary     = "Collection of Rails generators"
   s.description = "KickoffRails is a collection of Rails generators for faster project setup."
 
+  s.license = 'MIT'
+
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
