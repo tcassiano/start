@@ -11,6 +11,6 @@ class UnicornGenerator < Rails::Generators::Base
     copy_file 'config/initializers/timeout.rb', 'config/initializers/timeout.rb'
     copy_file 'Procfile', 'Procfile'
     # TODO: add lines to .env instead of copying the role file
-    copy_file '.env', '.env'
+    copy_file 'environment', '.env'
   end
 end
