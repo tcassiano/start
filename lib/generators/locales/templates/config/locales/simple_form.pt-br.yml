@@ -15,3 +15,10 @@ pt-BR:
       defaults:
         password: Senha
         name: Nome
+    # hints:
+    #   defaults:
+    #     password: 'Mínimo de 8 caracteres.'
+    # placeholders:
+    #   defaults:
+    #     name: 'Nome'
+    #     password: '****'

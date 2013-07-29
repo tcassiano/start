@@ -208,31 +208,20 @@ pt-BR:
       <<: *errors
   activerecord:
     models:
-      user: Empresa
-      press_release: Comunicado de imprensa
+      user: Usuário
     attributes:
       user:
         name: Nome
-        sign_in_count: Contagem de logins
-        current_sign_in_at: Login atual em
-        last_sign_in_at: Último login em
-        current_sign_in_ip: IP do login atual
-        last_sign_in_ip: IP do último login
-        created_at: Cadastrado em
-        updated_at: Atualizado em
-        password: Nova senha
-        password_confirmation: Confirme a nova senha
-        current_password: Senha atual
-      press_release:
-        title: Título
-        subtitle: Subtítulo
-        location: Localização
-        excerpt: Resumo
-        body: Comunicado completo
-        published: Publicado
 
     errors:
       <<: *errors
+
+  helpers:
+    submit:
+      user:
+        create: 'Novo %{model}'
+        update: 'Salvar'
+
   views:
     pagination:
       first: "&laquo; Primeira"
