@@ -1,4 +1,4 @@
-class SlimGenerator < Rails::Generators::Base
+class Start::SlimGenerator < Rails::Generators::Base
   source_root File.expand_path("../templates", __FILE__)
 
   def add_gems

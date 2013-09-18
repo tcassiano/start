@@ -1,17 +1,17 @@
 $:.push File.expand_path('../lib', __FILE__)
 
 # Maintain your gem's version:
-require 'kickoff_rails/version'
+require 'start/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = 'kickoff_rails'
-  s.version     = KickoffRails::VERSION
+  s.name        = 'start'
+  s.version     = Start::VERSION
   s.authors     = ['Julio Protzek', 'Renato Carvalho']
   s.email       = ['julio@startae.com.br', 'renato@startae.com.br']
   s.homepage    = 'http://github.com/startae/kickoff_rails'
   s.summary     = 'Collection of Rails generators'
-  s.description = 'KickoffRails is a collection of Rails generators for faster project setup.'
+  s.description = 'Start is a collection of Rails generators for faster project setup.'
 
   s.license = 'MIT'
 
