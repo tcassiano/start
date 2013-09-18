@@ -1,16 +1,19 @@
-= KickoffRails
+= Start
 
-KickoffRails is a collection of Rails generators for faster project setup.
+Start is a collection of Rails generators for faster project setup.
 
 == Setup
 
 Add the gem to your Gemfile.
 
-  gem "kickoff_rails", group: :development
+  gem "start", group: :development
 
 Then you can run any of the included generators.
 
-  rails g unicorn
+  rails g start:unicorn
 
 == Included Generators
-* unicorn: generates config files for unicorn setup based on https://devcenter.heroku.com/articles/rails-unicorn
+* start:unicorn - unicorn setup based on https://devcenter.heroku.com/articles/rails-unicorn
+* start:heroku_wake_up - visits website every 10min to make sure that heroku dyno is awake
+* start:locale - pt-BR for rails, devise and simple_form
+* start:slim - installs g siml-rails gem and replaces application.erb with application.slim
