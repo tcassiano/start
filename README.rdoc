@@ -18,3 +18,4 @@ Then you can run any of the included generators.
 * start:locale - pt-BR for rails, devise and simple_form
 * start:slim - installs g siml-rails gem and replaces application.erb with application.slim
 * start:heroku - add gem rails_12factor
+* start:bower - add config bower to install components on `vendor/assets/components`
