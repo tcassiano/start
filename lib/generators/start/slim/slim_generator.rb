@@ -1,3 +1,5 @@
+require 'rails/generators'
+
 class Start::SlimGenerator < Rails::Generators::Base
   source_root File.expand_path("../templates", __FILE__)
 
@@ -6,7 +8,7 @@ class Start::SlimGenerator < Rails::Generators::Base
   end
 
   def copy_files
-    # copy_file 'config/unicorn.rb', 'config/unicorn.rb'
+    copy_file 'app/views/layouts/application.html.slim', 'app/views/layouts/application.html.slim'
 
     application do
       "Slim::Engine.set_default_options format: :html5"
