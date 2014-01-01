@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
 
-  s.add_dependency 'rails', '>= 4.0.0', '< 5'
+  s.add_dependency 'rails', '4.1.0.beta1'
 
   s.add_development_dependency 'simplecov',   '~> 0.7.1'
   s.add_development_dependency 'rspec-rails', '~> 2.99.0.beta1'
