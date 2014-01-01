@@ -42,7 +42,7 @@ describe Start::SlimGenerator do
     before { run_generator %w(start:slim) }
     subject { file('Gemfile') }
 
-    it { should contain(/gem "slim-rails", "~> 2.0.1"/) }
+    it { should contain(/gem "slim-rails", "~> 2.0.4"/) }
   end
 
 end

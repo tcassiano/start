@@ -26,7 +26,7 @@ describe Start::HerokuWakeUpGenerator do
     before { run_generator %w(start:heroku_wake_up) }
     subject { file('Gemfile') }
 
-    it { should contain(/gem "rufus-scheduler", "~> 2.0.19", group: :production/) }
+    it { should contain(/gem "rufus-scheduler", "~> 3.0.3", group: :production/) }
   end
 
 end
