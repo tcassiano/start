@@ -26,31 +26,23 @@ describe Start::SlimGenerator do
     before { run_generator %w(start:slim) }
     subject { file('config/application.rb') }
 
-    it 'configs Slim formating to html5' do
-      subject.should contain(/Slim::Engine.set_default_options format: :html5/)
-    end
+    it { should contain(/Slim::Engine.set_default_options format: :html5/) }
   end
 
   describe 'config/environments/development.rb' do
     before { run_generator %w(start:slim) }
     subject { file('config/environments/development.rb') }
 
-    it 'configs Slim formating to pretty' do
-      subject.should contain(/Slim::Engine.set_default_options pretty: true, sort_attrs: false/)
-    end
+    it { should contain(/Slim::Engine.set_default_options pretty: true, sort_attrs: false/) }
 
-    it 'configs Slim tabsize to 2' do
-      subject.should contain(/Slim::Engine.set_default_options tabsize: 2/)
-    end
+    it { should contain(/Slim::Engine.set_default_options tabsize: 2/) }
   end
 
   describe 'Gemfile' do
     before { run_generator %w(start:slim) }
     subject { file('Gemfile') }
 
-    it 'adds "slim-rails" gem' do
-      subject.should contain(/gem "slim-rails", "~> 2.0.1"/)
-    end
+    it { should contain(/gem "slim-rails", "~> 2.0.1"/) }
   end
 
 end
