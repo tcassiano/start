@@ -23,5 +23,6 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'simplecov',   '~> 0.7.1'
   s.add_development_dependency 'rspec-rails', '~> 2.99.0.beta1'
-  s.add_development_dependency 'ammeter',     '~> 0.2.9'
+  s.add_development_dependency 'ammeter',     '0.2.5'
+  s.add_development_dependency 'pry-rails',   '0.3.2'
 end

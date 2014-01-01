@@ -21,6 +21,5 @@ class Start::SlimGenerator < Rails::Generators::Base
     application(nil, env: "development") do
       "Slim::Engine.set_default_options tabsize: 2"
     end
-
   end
 end
