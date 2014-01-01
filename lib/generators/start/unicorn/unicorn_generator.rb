@@ -2,7 +2,7 @@ class Start::UnicornGenerator < Rails::Generators::Base
   source_root File.expand_path("../templates", __FILE__)
 
   def add_gems
-    gem 'unicorn',      '~> 4.6.2'
+    gem 'unicorn',      '~> 4.7.0'
     gem 'rack-timeout', '~> 0.0.4'
   end
 
