@@ -15,9 +15,4 @@ describe Start::HerokuGenerator do
 
     it { should contain(/gem "rails_12factor"/) }
   end
-
-  def copy_gemfile
-    gemfile = File.expand_path('../../../../../Gemfile', __FILE__)
-    FileUtils.cp gemfile, destination_root
-  end
 end
