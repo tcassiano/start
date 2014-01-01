@@ -16,6 +16,14 @@ module Generators
       FileUtils.cp development, destination
     end
 
+    def copy_spec_helper
+      spec_helper = File.expand_path('../../../spec_helper.rb', __FILE__)
+      destination = File.join(destination_root, 'spec')
+
+      FileUtils.mkdir_p(destination)
+      FileUtils.cp spec_helper, destination
+    end
+
     def copy_gemfile
       gemfile = File.expand_path('../../../../Gemfile', __FILE__)
       FileUtils.cp gemfile, destination_root
