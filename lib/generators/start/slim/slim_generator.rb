@@ -4,7 +4,7 @@ class Start::SlimGenerator < Rails::Generators::Base
   source_root File.expand_path("../templates", __FILE__)
 
   def add_gems
-    gem 'slim-rails', '~> 2.0.1'
+    gem 'slim-rails', '~> 2.0.4'
   end
 
   def copy_files
